@@ -24,6 +24,14 @@
 		if (user) {
 			goto('/chat');
 		}
+
+		// Initialize Google AdSense ads
+		try {
+			(window.adsbygoogle = window.adsbygoogle || []).push({});
+			(window.adsbygoogle = window.adsbygoogle || []).push({});
+		} catch (e) {
+			console.error('AdSense initialization failed:', e);
+		}
 	});
 
 	async function handleLogin() {
@@ -53,6 +61,16 @@
 
 <div class="flex min-h-screen items-center justify-center bg-white dark:bg-black p-4 font-sans text-slate-900 dark:text-slate-100 transition-colors duration-200">
 	<div class="w-full max-w-md space-y-8 p-4 transition-all duration-300">
+		<!-- Google AdSense - Home Top -->
+		<div class="mb-8">
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-4995716486045157"
+				 data-ad-slot="YOUR_AD_SLOT_HERE_TOP"
+				 data-ad-format="auto"
+				 data-full-width-responsive="true"></ins>
+		</div>
+
 		<div class="text-center">
 			<img src="/logoicon.png" alt="Logo" class="mx-auto h-20 w-20 object-cover rounded-full border-2 border-[#b91c1c]/20 p-1 shadow-lg" />
 			<h2 class="mt-6 text-3xl font-bold tracking-tight">Welcome Back</h2>
@@ -115,6 +133,16 @@
 				</p>
 			</div>
 		</form>
+
+		<!-- Google AdSense - Home Bottom -->
+		<div class="mt-8 pt-6 border-t border-slate-200 dark:border-white/10">
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-4995716486045157"
+				 data-ad-slot="YOUR_AD_SLOT_HERE"
+				 data-ad-format="auto"
+				 data-full-width-responsive="true"></ins>
+		</div>
 	</div>
 </div>
 
